@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Impact of the Default Effect on Human Choices</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f2f5f8;color:#263746;font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+.wrap{max-width:780px;margin:32px auto;padding:0 16px}.hero{background:linear-gradient(135deg,#17324d,#397ba8);color:white;padding:30px;border-radius:16px 16px 0 0}
+.eyebrow{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;opacity:.85}h1{font-size:clamp(25px,4vw,34px);line-height:1.2;margin:10px 0}.hero p{margin:0;color:#e6f0f6}
+main{background:white;padding:28px;border:1px solid #dce4ea;border-top:0;border-radius:0 0 16px 16px;box-shadow:0 12px 30px #1b344514}
+.notice{background:#edf5fa;border-left:4px solid #397ba8;padding:13px 15px;border-radius:8px;margin-bottom:24px}
+h2{font-size:21px;color:#17324d;margin:28px 0 12px}.q{border:1px solid #dce4ea;border-radius:12px;padding:18px;margin:13px 0}
+.qt{font-weight:bold;margin:0 0 12px}.opt{display:flex;gap:10px;align-items:flex-start;border:1px solid #dce4ea;border-radius:8px;padding:10px 12px;margin:8px 0;cursor:pointer}
+.opt:hover{background:#f7fafc}.opt:has(input:checked){background:#edf5fa;border-color:#397ba8}input{accent-color:#397ba8;margin-top:4px}
+select{width:100%;padding:12px;border:1px solid #bdcbd5;border-radius:8px;font-size:15px;background:white}.field{margin:14px 0}.field label{font-weight:bold;display:block;margin-bottom:8px}
+button{border:0;border-radius:8px;padding:12px 18px;font-size:15px;font-weight:bold;cursor:pointer}.primary{background:#2f6f9f;color:white}.secondary{background:#e9eff3;color:#17324d}
+.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.small{font-size:13px;color:#637586}.error{color:#a33131;font-weight:bold;margin-top:12px}.hidden{display:none}.thanks{color:#2f7659;font-weight:bold}
+footer{text-align:center;color:#637586;font-size:12px;padding:18px 0 0}
+@media(max-width:520px){.wrap{margin:12px auto;padding:0 9px}.hero,main{padding:20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<div class="eyebrow">SEU332 · Behavioral Economics</div>
+<h1>The Impact of the Default Effect on Human Choices</h1>
+<p>A short questionnaire about how pre-selected options may influence everyday decisions.</p>
+</header>
+<main>
+<section id="survey">
+<div class="notice"><strong>Instructions:</strong> Please answer each question based on your own preference. There are no right or wrong answers. Participation is voluntary.</div>
+<h2>Section A: Demographic Information</h2>
+<div class="q">
+<div class="field"><label for="age">1. What is your age?</label>
+<select id="age"><option value="">Select your age group</option><option>18–20 years old</option><option>21–23 years old</option><option>24–26 years old</option><option>27–30 years old</option><option>Above 30 years old</option></select></div>
+<div class="field"><label>2. What is your gender?</label>
+<label class="opt"><input type="radio" name="gender" value="Male"><span>Male</span></label>
+<label class="opt"><input type="radio" name="gender" value="Female"><span>Female</span></label>
+<label class="opt"><input type="radio" name="gender" value="Prefer not to say"><span>Prefer not to say</span></label></div>
+</div>
+<h2>Section B: Decision-Making Scenarios</h2>
+<p class="small">Choose the option that best represents your decision in each situation.</p>
+<div class="q"><p class="qt">3. Imagine you have just installed a new mobile application. The application asks whether you would like to receive promotional notifications about new products, offers and updates. What would you choose?</p>
+<label class="opt"><input type="radio" name="q3" value="Yes, I would like to receive notifications."><span>Yes, I would like to receive notifications.</span></label>
+<label class="opt"><input type="radio" name="q3" value="No, I do not want to receive notifications."><span>No, I do not want to receive notifications.</span></label></div>
+<div class="q"><p class="qt">4. Imagine you are creating an account on an online shopping website. You are asked whether you would like to subscribe to the website's newsletter to receive promotional emails and special discounts. What would you choose?</p>
+<label class="opt"><input type="radio" name="q4" value="Yes, I want to subscribe."><span>Yes, I want to subscribe.</span></label>
+<label class="opt"><input type="radio" name="q4" value="No, I do not want to subscribe."><span>No, I do not want to subscribe.</span></label></div>
+<div class="q"><p class="qt">5. Imagine you are making an online payment. The website asks whether you would like to receive a digital receipt by email after completing your payment. What would you choose?</p>
+<label class="opt"><input type="radio" name="q5" value="Yes, send the receipt to my email."><span>Yes, send the receipt to my email.</span></label>
+<label class="opt"><input type="radio" name="q5" value="No, I do not need an email receipt."><span>No, I do not need an email receipt.</span></label></div>
+<div class="q"><p class="qt">6. Imagine you are ordering food online. Before completing your order, the application asks whether you would like to add cutlery (spoon and fork) to your order. What would you choose?</p>
+<label class="opt"><input type="radio" name="q6" value="Yes, include cutlery with my order."><span>Yes, include cutlery with my order.</span></label>
+<label class="opt"><input type="radio" name="q6" value="No, I do not need cutlery."><span>No, I do not need cutlery.</span></label></div>
+<div class="q"><p class="qt">7. Imagine you are shopping online and the website offers gift-wrapping services for your purchase. What would you choose?</p>
+<label class="opt"><input type="radio" name="q7" value="Yes, I would like gift-wrapping."><span>Yes, I would like gift-wrapping.</span></label>
+<label class="opt"><input type="radio" name="q7" value="No, I do not need gift-wrapping."><span>No, I do not need gift-wrapping.</span></label></div>
+<h2>Section C: General Opinions and Awareness</h2>
+<div class="q"><p class="qt">8. When using websites or mobile applications, how often do you notice options that have already been selected for you?</p>
+<label class="opt"><input type="radio" name="q8" value="Always"><span>Always</span></label><label class="opt"><input type="radio" name="q8" value="Often"><span>Often</span></label><label class="opt"><input type="radio" name="q8" value="Sometimes"><span>Sometimes</span></label><label class="opt"><input type="radio" name="q8" value="Rarely"><span>Rarely</span></label><label class="opt"><input type="radio" name="q8" value="Never"><span>Never</span></label></div>
+<div class="q"><p class="qt">9. Do you think pre-selected options can influence your decisions?</p>
+<label class="opt"><input type="radio" name="q9" value="Yes"><span>Yes</span></label><label class="opt"><input type="radio" name="q9" value="No"><span>No</span></label><label class="opt"><input type="radio" name="q9" value="Not sure"><span>Not sure</span></label></div>
+<div class="q"><p class="qt">10. What is the main reason you might keep an option that has already been selected for you?</p>
+<label class="opt"><input type="radio" name="q10" value="It is more convenient and saves time."><span>It is more convenient and saves time.</span></label>
+<label class="opt"><input type="radio" name="q10" value="I do not notice that the option has already been selected."><span>I do not notice that the option has already been selected.</span></label>
+<label class="opt"><input type="radio" name="q10" value="I trust the recommendation made by the platform."><span>I trust the recommendation made by the platform.</span></label>
+<label class="opt"><input type="radio" name="q10" value="I do not have a strong preference."><span>I do not have a strong preference.</span></label>
+<label class="opt"><input type="radio" name="q10" value="Other reasons."><span>Other reasons.</span></label></div>
+<div id="error" class="error" role="alert"></div>
+<div class="buttons"><button class="primary" type="button" id="submit">Submit response</button><button class="secondary" type="button" id="clear">Clear answers</button></div>
+<p class="small">Please review your answers before submitting.</p>
+</section>
+<section id="thankyou" class="hidden"><h2>Thank you for participating!</h2><p class="thanks">Your demo response has been saved in this browser.</p><p class="small">Prototype only: responses are stored locally in this browser and are not automatically sent to the research team.</p>
+<div class="buttons"><button class="primary" id="another">Submit another demo response</button><button class="secondary" id="export">Export this browser's demo responses (CSV)</button></div></section>
+<footer>SEU332 Behavioral Economics · Questionnaire prototype</footer>
+</main></div>
+<script>
+/* Prototype experiment assignment. Group A sees the first option pre-selected
+   for scenarios 3–7. Group B sees no pre-selected option. */
+const group = Math.random() < 0.5 ? "A" : "B";
+if (group === "A") ["q3","q4","q5","q6","q7"].forEach(name => {
+  const first = document.querySelector(`input[name="${name}"]`);
+  if (first) first.checked = true;
+});
+function answer(name){const el=document.querySelector(`input[name="${name}"]:checked`);return el?el.value:"";}
+function stored(){try{return JSON.parse(localStorage.getItem("seu332_responses")||"[]");}catch(e){return [];}}
+document.getElementById("submit").addEventListener("click",()=>{
+ const age=document.getElementById("age").value, gender=answer("gender");
+ const names=["q3","q4","q5","q6","q7","q8","q9","q10"];
+ const answers={}; names.forEach(n=>answers[n]=answer(n));
+ if(!age||!gender||Object.values(answers).some(v=>!v)){
+   document.getElementById("error").textContent="Please answer all questions before submitting.";return;
+ }
+ const rows=stored();rows.push({submitted_at:new Date().toISOString(),group,age,gender,...answers});
+ localStorage.setItem("seu332_responses",JSON.stringify(rows));
+ document.getElementById("error").textContent="";
+ document.getElementById("survey").classList.add("hidden");
+ document.getElementById("thankyou").classList.remove("hidden");window.scrollTo(0,0);
+});
+document.getElementById("clear").addEventListener("click",()=>{
+ document.querySelectorAll('input[type="radio"]').forEach(x=>x.checked=false);
+ document.getElementById("age").value="";document.getElementById("error").textContent="";
+ if(group==="A")["q3","q4","q5","q6","q7"].forEach(n=>{document.querySelector(`input[name="${n}"]`).checked=true;});
+});
+document.getElementById("another").addEventListener("click",()=>location.reload());
+document.getElementById("export").addEventListener("click",()=>{
+ const rows=stored();if(!rows.length){alert("No demo responses saved in this browser yet.");return;}
+ const headers=Object.keys(rows[0]);const csv=[headers.join(","),...rows.map(r=>headers.map(k=>'"'+String(r[k]??"").replaceAll('"','""')+'"').join(","))].join("\n");
+ const blob=new Blob(["\uFEFF"+csv],{type:"text/csv;charset=utf-8"});const url=URL.createObjectURL(blob);
+ const a=document.createElement("a");a.href=url;a.download="SEU332_demo_responses.csv";a.click();URL.revokeObjectURL(url);
+});
+</script>
+</body>
+</html>
