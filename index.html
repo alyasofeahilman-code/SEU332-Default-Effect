@@ -99,7 +99,7 @@ header{background:linear-gradient(120deg,#142b4a,#1c5970);color:white;padding:30
 <footer>SEU332 · Behavioral Economics Group Assignment</footer>
 
 <script>
-const SCRIPT_URL = "TAMPAL_WEB_APP_URL_ANDA_DI_SINI";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx4t0dGgXRUhegP1lmbGXe1Oybvp19RJ5wn6o00LuaDF9csJm6plauF6ItYFoYPNyYb/exec";
 
 const sections = {
  0: {en: "Part A: Demographic Information", ms: "Bahagian A: Maklumat Demografi"},
@@ -313,14 +313,37 @@ form.addEventListener('submit', e => {
   q11: questions[10].opts[answers[10]][0]
  };
 
- if (SCRIPT_URL && SCRIPT_URL.startsWith("https://")) {
-  fetch(SCRIPT_URL, {
-   method: "POST",
-   mode: "no-cors",
-   headers: { "Content-Type": "application/json" },
-   body: JSON.stringify(payload)
-  }).catch(err => console.error("Ralat penghantaran:", err));
- }
+ 
+const submitButton = document.getElementById('submitBtn');
+submitButton.disabled = true;
+submitButton.textContent = lang === 'en' ? 'Submitting...' : 'Sedang menghantar...';
+
+try {
+  await fetch(SCRIPT_URL, {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "text/plain;charset=utf-8"
+    },
+    body: JSON.stringify(payload)
+  });
+
+  sessionStorage.setItem('seu332_last_answers', JSON.stringify(answers));
+  sessionStorage.setItem('seu332_group_submitted', assignedGroup);
+  showResult(answers);
+
+} catch (err) {
+  console.error("Ralat penghantaran:", err);
+
+  document.getElementById('formMessage').textContent = lang === 'en'
+    ? 'Your responses could not be sent. Please check your internet connection and try again.'
+    : 'Jawapan anda tidak dapat dihantar. Sila semak sambungan internet dan cuba lagi.';
+
+} finally {
+  submitButton.disabled = false;
+  submitButton.textContent = lang === 'en' ? 'Submit answers' : 'Hantar jawapan';
+}
+
 
  sessionStorage.setItem('seu332_last_answers', JSON.stringify(answers));
  sessionStorage.setItem('seu332_group_submitted', assignedGroup);
