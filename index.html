@@ -9,9 +9,10 @@
 *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#edf4f8,#f8fbfc);color:var(--ink);line-height:1.55}
 header{background:linear-gradient(120deg,#142b4a,#1c5970);color:white;padding:30px 18px 34px;text-align:center}header .tag{display:inline-block;border:1px solid #91b9ca;border-radius:20px;padding:5px 13px;font-size:12px;letter-spacing:1px;margin-bottom:12px}header h1{max-width:850px;margin:8px auto;font-size:clamp(24px,4vw,36px);line-height:1.2}header p{margin:10px auto 0;max-width:700px;color:#d7e5ed}
 .wrap{max-width:850px;margin:22px auto;padding:0 15px 45px}.toolbar{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin-bottom:14px}.toolbar label{font-weight:bold;font-size:14px}select,button{font:inherit}#language{padding:9px 12px;border:1px solid #cbd5e1;border-radius:9px;background:white;color:var(--ink)}
-.card{background:white;border:1px solid var(--line);border-radius:18px;padding:22px;margin:14px 0;box-shadow:0 7px 24px rgba(20,43,74,.06)}.intro h2{margin:0 0 8px;color:var(--navy)}.note{background:var(--pale);border-left:4px solid var(--teal);padding:12px 14px;border-radius:7px;margin-top:15px;font-size:14px;color:var(--navy)}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:22px;margin:14px 0;box-shadow:0 7px 24px rgba(20,43,74,.06)}.intro h2{margin:0 0 10px;color:var(--navy)}.intro p{margin:0 0 10px}.note{background:var(--pale);border-left:4px solid var(--teal);padding:12px 14px;border-radius:7px;margin-top:15px;font-size:14px;color:var(--navy)}
 .progress-top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:18px;font-size:13px;color:var(--muted);font-weight:bold}.progress{height:9px;background:#e6edf2;border-radius:20px;overflow:hidden;margin:8px 0 2px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#22998c,#56c6b5);transition:width .2s}
-.question{padding:21px 0;border-bottom:1px solid #edf1f4}.question:last-child{border-bottom:0}.qhead{display:flex;gap:0;align-items:flex-start}.qtitle{font-weight:700;margin:0 0 13px;color:var(--navy);padding-top:5px}.qnum{font-size:11px;letter-spacing:.7px;color:var(--teal);font-weight:bold;text-transform:uppercase;margin:0 0 2px}
+.sec-divider{background:#f4f8fa;border-left:4px solid var(--blue);padding:11px 15px;border-radius:8px;margin:24px 0 6px;color:var(--navy);font-weight:bold;font-size:15px}.sec-divider:first-child{margin-top:4px}
+.question{padding:21px 0;border-bottom:1px solid #edf1f4}.question:last-child{border-bottom:0}.qhead{display:flex;gap:0;align-items:flex-start}.qtitle{font-weight:700;margin:0 0 10px;color:var(--navy);padding-top:5px}.qnum{font-size:11px;letter-spacing:.7px;color:var(--teal);font-weight:bold;text-transform:uppercase;margin:0 0 2px}.qexample{font-size:13px;color:var(--muted);background:#f8fafc;border:1px dashed #cbd5e1;border-radius:8px;padding:8px 12px;margin:0 0 13px}
 .options{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:9px;padding-left:55px}.option{display:flex;align-items:center;gap:9px;border:1px solid #dbe4ea;border-radius:11px;padding:11px 13px;cursor:pointer;transition:.15s;background:#fff;min-height:45px}.option:hover{border-color:var(--teal);background:#f5fbfa;transform:translateY(-1px)}.option:has(input:checked){border-color:var(--teal);background:#eaf8f5;box-shadow:inset 0 0 0 1px var(--teal)}.option input{accent-color:var(--teal);width:16px;height:16px;flex:0 0 auto}.option span{font-size:14px}
 .actions{display:flex;justify-content:flex-end;margin-top:22px}.primary{background:var(--teal);color:white;border:0;border-radius:11px;padding:13px 23px;font-weight:bold;cursor:pointer;box-shadow:0 5px 12px rgba(34,153,140,.18)}.primary:hover{background:#187f75}.hidden{display:none!important}.small{font-size:13px;color:var(--muted)}#formMessage{color:#b42318;font-weight:bold;margin-top:12px}
 .result-wrap{background:linear-gradient(135deg,#102b49,#1d5a68);border-radius:20px;padding:22px;margin:20px 0;color:white}.result-card{max-width:700px;margin:auto;background:white;color:var(--ink);border-radius:18px;padding:clamp(22px,5vw,36px);text-align:center;box-shadow:0 12px 35px rgba(0,0,0,.15)}.result-kicker{color:var(--teal);font-weight:bold;font-size:12px;letter-spacing:1.4px}.result-card h2{color:var(--navy);font-size:clamp(25px,4vw,34px);margin:8px 0}.result-desc{max-width:560px;margin:0 auto 18px;color:#526276}.result-info{background:#eff7f7;border-radius:13px;padding:16px;text-align:left;margin:16px 0}.tendency-box{border:1px solid var(--line);border-radius:13px;padding:16px;text-align:left;margin:16px 0}.tendency-box h3{margin:0 0 14px;color:var(--navy);font-size:17px}.meter{margin:12px 0}.meter-head{display:flex;justify-content:space-between;gap:10px;font-size:14px;margin-bottom:7px}.meter-track{height:9px;background:#e7edf1;border-radius:20px;overflow:hidden}.meter-fill{height:100%;background:linear-gradient(90deg,#22998c,#56c6b5);border-radius:20px}.concept-list{display:grid;gap:11px;margin-top:12px}.concept-item{background:#f7f9fb;border:1px solid #e6edf2;border-radius:11px;padding:12px}.concept-item strong{display:block;color:var(--navy);margin-bottom:3px}.concept-item p{margin:0;color:#526276;font-size:14px}.result-info h3{margin:0 0 5px;color:var(--navy);font-size:16px}.result-info p{margin:0;color:#526276}.concept-mini{border-top:1px solid var(--line);padding-top:17px;margin-top:18px;text-align:left}.concept-mini h3{margin:0 0 5px;color:var(--navy);font-size:17px}.concept-mini p{margin:0;color:#526276;font-size:14px}.result-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:20px}.secondary{background:#edf3f6;color:var(--navy);border:1px solid #d9e4eb;border-radius:11px;padding:12px 18px;font-weight:bold;cursor:pointer}.result-disclaimer{font-size:12px;color:#738195;margin-top:15px}footer{text-align:center;color:var(--muted);font-size:12px;padding:18px}
@@ -36,11 +37,15 @@ header{background:linear-gradient(120deg,#142b4a,#1c5970);color:white;padding:30
 
   <section id="survey">
     <div class="card intro">
-      <h2 data-en="Welcome!" data-ms="Selamat datang!">Welcome!</h2>
-      <p data-en="Thank you for taking part. This questionnaire explores how pre-selected options and default settings may relate to everyday choices. Please answer honestly. There are no right or wrong answers."
-         data-ms="Terima kasih kerana menyertai soal selidik ini. Soal selidik ini mengkaji bagaimana pilihan yang telah ditetapkan mungkin berkaitan dengan keputusan harian. Sila jawab dengan jujur. Tiada jawapan betul atau salah.">Thank you for taking part. This questionnaire explores how pre-selected options and default settings may relate to everyday choices. Please answer honestly. There are no right or wrong answers.</p>
-      <div class="note" data-en="Instruction: Please review each question carefully. You are free to select, keep, or change any answer option before clicking the submit button."
-           data-ms="Arahan: Sila semak setiap soalan dengan teliti. Anda bebas untuk memilih, mengekalkan, atau mengubah mana-mana pilihan jawapan sebelum menekan butang hantar.">Instruction: Please review each question carefully. You are free to select, keep, or change any answer option before clicking the submit button.</div>
+      <h2 data-en="Welcome to Our Survey!" data-ms="Selamat Datang ke Soal Selidik Kami!">Welcome to Our Survey!</h2>
+      <p data-en="Thank you for participating in our study, “The Impact of the Default Effect on Human Choices.”"
+         data-ms="Terima kasih kerana menyertai kajian kami, “Pengaruh Kesan Default terhadap Pilihan Manusia.”">Thank you for participating in our study, “The Impact of the Default Effect on Human Choices.”</p>
+      <p data-en="This survey explores how the way choices are presented may influence everyday decisions, such as online shopping, food delivery and mobile app preferences."
+         data-ms="Soal selidik ini meneroka bagaimana cara pilihan dipersembahkan boleh mempengaruhi keputusan harian, seperti membeli-belah dalam talian, penghantaran makanan dan tetapan aplikasi telefon.">This survey explores how the way choices are presented may influence everyday decisions, such as online shopping, food delivery and mobile app preferences.</p>
+      <p data-en="There are no right or wrong answers. Please answer based on your own preferences and opinions. Thank you for your participation!"
+         data-ms="Tiada jawapan betul atau salah. Sila jawab berdasarkan pilihan dan pendapat anda sendiri. Terima kasih atas penyertaan anda!">There are no right or wrong answers. Please answer based on your own preferences and opinions. Thank you for your participation!</p>
+      <div class="note" data-en="Instruction: You are free to select, keep, or change any answer before clicking the submit button."
+           data-ms="Arahan: Anda bebas untuk memilih, mengekalkan, atau mengubah mana-mana pilihan jawapan sebelum menekan butang hantar.">Instruction: You are free to select, keep, or change any answer before clicking the submit button.</div>
       <div class="progress-top"><span id="questionCount">11 QUESTIONS · 0/11 COMPLETED</span><span id="progressText">0 of 11 answered</span></div>
       <div class="progress"><span id="progressBar"></span></div>
     </div>
@@ -74,25 +79,87 @@ header{background:linear-gradient(120deg,#142b4a,#1c5970);color:white;padding:30
         </div>
       </div>
       <div class="result-actions"><button class="secondary" id="restartBtn" type="button" data-en="Back to questionnaire" data-ms="Kembali ke soal selidik">Back to questionnaire</button></div>
-      <p class="result-disclaimer" data-en="These indicators are illustrative and based on selected answers, not a validated psychological test. The overall Default Effect must be examined by comparing responses from Group A and Group B." data-ms="Petunjuk ini hanyalah gambaran berdasarkan jawapan yang dipilih, bukan ujian psikologi yang disahkan. Kesan Default Effect secara keseluruhan perlu dikaji dengan membandingkan jawapan Kumpulan A dan Kumpulan B.">These indicators are illustrative and based on selected answers, not a validated psychological test. The overall Default Effect must be examined by comparing responses from Group A and Group B.</p>
+      <p class="result-disclaimer" data-en="Note: This result is a general reflection based on your answers for educational purposes, not a formal psychological assessment." data-ms="Nota: Keputusan ini hanyalah gambaran umum berdasarkan jawapan anda bagi tujuan pembelajaran, bukan penilaian psikologi rasmi.">Note: This result is a general reflection based on your answers for educational purposes, not a formal psychological assessment.</p>
     </div>
   </section>
 </main>
 <footer>SEU332 · Behavioral Economics Group Assignment</footer>
 
 <script>
+const SCRIPT_URL = "TAMPAL_WEB_APP_URL_ANDA_DI_SINI";
+
+const sections = {
+ 0: {en: "Part A: Demographic Information", ms: "Bahagian A: Maklumat Demografi"},
+ 2: {en: "Part B: Everyday Choices", ms: "Bahagian B: Pilihan Harian"},
+ 7: {en: "Part C: Awareness and Decision-Making", ms: "Bahagian C: Kesedaran dan Pembuatan Keputusan"}
+};
+
 const questions = [
- {en:"What is your age group?",ms:"Apakah kumpulan umur anda?",opts:[["18–20","18–20"],["21–23","21–23"],["24–26","24–26"],["27–30","27–30"],["Above 30","Lebih 30 tahun"]]},
- {en:"What is your gender?",ms:"Apakah jantina anda?",opts:[["Male","Lelaki"],["Female","Perempuan"],["Prefer not to say","Tidak mahu menyatakan"]]},
- {en:"Do you usually allow promotional notifications from mobile applications?",ms:"Adakah anda biasanya membenarkan notifikasi promosi daripada aplikasi telefon?",opts:[["Yes","Ya"],["No","Tidak"]]},
- {en:"When shopping online, do you subscribe to the store's newsletter if the option is offered?",ms:"Semasa membeli-belah dalam talian, adakah anda melanggan surat berita kedai jika pilihan itu ditawarkan?",opts:[["Yes","Ya"],["No","Tidak"]]},
- {en:"Do you choose to receive digital receipts by email when shopping?",ms:"Adakah anda memilih untuk menerima resit digital melalui e-mel semasa membeli-belah?",opts:[["Yes","Ya"],["No","Tidak"]]},
- {en:"When ordering food delivery, do you request cutlery?",ms:"Semasa membuat pesanan penghantaran makanan, adakah anda meminta sudu dan garpu?",opts:[["Yes","Ya"],["No","Tidak"]]},
- {en:"When shopping online, do you choose gift wrapping if it is available?",ms:"Semasa membeli-belah dalam talian, adakah anda memilih pembungkusan hadiah jika disediakan?",opts:[["Yes","Ya"],["No","Tidak"]]},
- {en:"How often do you notice options that have already been selected for you on websites or apps?",ms:"Berapa kerapkah anda menyedari pilihan yang telah ditetapkan untuk anda di laman web atau aplikasi?",opts:[["Always","Sentiasa"],["Often","Kerap"],["Sometimes","Kadangkala"],["Rarely","Jarang"],["Never","Tidak pernah"]]},
- {en:"Do pre-selected options influence the choices you make?",ms:"Adakah pilihan yang telah ditetapkan mempengaruhi keputusan anda?",opts:[["Yes","Ya"],["No","Tidak"],["Not sure","Tidak pasti"]]},
- {en:"What is the main reason you might keep a pre-selected option?",ms:"Apakah sebab utama anda mungkin mengekalkan pilihan yang telah ditetapkan?",opts:[["It is convenient and saves time","Mudah dan menjimatkan masa"],["I did not notice it was pre-selected","Saya tidak menyedari pilihan itu telah ditetapkan"],["I trust the platform's recommendation","Saya mempercayai cadangan platform"],["I do not have a strong preference","Saya tiada pilihan tertentu"],["Other","Lain-lain"]]},
- {en:"Did you notice whether any answers in this questionnaire were already selected for you?",ms:"Adakah anda perasan jika terdapat sebarang jawapan dalam soal selidik ini yang telah ditandakan lebih awal untuk anda?",opts:[["Yes, I noticed some answers were pre-selected","Ya, saya perasan beberapa jawapan telah ditandakan lebih awal"],["No, I did not notice any pre-selected answers","Tidak, saya tidak perasan sebarang jawapan yang ditandakan lebih awal"],["Not sure","Tidak pasti"]]}
+ {
+  en:"What is your age?",
+  ms:"Berapakah umur anda?",
+  opts:[["18–20 years old","18–20 tahun"],["21–23 years old","21–23 tahun"],["24–26 years old","24–26 tahun"],["27–30 years old","27–30 tahun"],["Above 30 years old","Lebih daripada 30 tahun"]]
+ },
+ {
+  en:"What is your gender?",
+  ms:"Apakah jantina anda?",
+  opts:[["Male","Lelaki"],["Female","Perempuan"],["Prefer not to say","Tidak mahu menyatakan"]]
+ },
+ {
+  en:"Do you allow mobile applications to send you promotional notifications?",
+  ms:"Adakah anda membenarkan aplikasi telefon menghantar notifikasi promosi kepada anda?",
+  opts:[["Yes","Ya"],["No","Tidak"]]
+ },
+ {
+  en:"Do you subscribe to promotional emails or newsletters from online shopping platforms?",
+  ms:"Adakah anda melanggan e-mel promosi atau newsletter daripada platform membeli-belah dalam talian?",
+  opts:[["Yes","Ya"],["No","Tidak"]]
+ },
+ {
+  en:"Do you choose to receive digital receipts through email when making purchases?",
+  ms:"Adakah anda memilih untuk menerima resit digital melalui e-mel apabila membuat pembelian?",
+  opts:[["Yes","Ya"],["No","Tidak"]]
+ },
+ {
+  en:"When ordering food through a delivery application, do you usually request cutlery (spoon, fork or chopsticks)?",
+  ms:"Apabila memesan makanan melalui aplikasi penghantaran, adakah anda biasanya meminta sudu, garpu atau penyepit makanan?",
+  opts:[["Yes","Ya"],["No","Tidak"]]
+ },
+ {
+  en:"When shopping online, do you usually choose the gift-wrapping option if it is available?",
+  ms:"Apabila membeli-belah dalam talian, adakah anda biasanya memilih pilihan pembungkusan hadiah jika disediakan?",
+  opts:[["Yes","Ya"],["No","Tidak"]]
+ },
+ {
+  en:"How often do you notice that an option has already been selected before you make your choice?",
+  ms:"Berapa kerap anda menyedari bahawa sesuatu pilihan telah ditandakan terlebih dahulu sebelum anda membuat pilihan sendiri?",
+  example:{
+   en:"Example: When using a website or application, you may find that an option has already been ticked before you make your own choice.",
+   ms:"Contoh: Semasa menggunakan laman web atau aplikasi, anda mungkin mendapati satu pilihan telah ditandakan terlebih dahulu sebelum anda membuat pilihan."
+  },
+  opts:[["Always","Sentiasa"],["Often","Kerap"],["Sometimes","Kadang-kadang"],["Rarely","Jarang"],["Never","Tidak pernah"]]
+ },
+ {
+  en:"Do you think pre-selected options can influence the decisions you make?",
+  ms:"Adakah anda berpendapat bahawa pilihan yang telah ditandakan terlebih dahulu boleh mempengaruhi keputusan anda?",
+  opts:[["Yes","Ya"],["No","Tidak"],["Not sure","Tidak pasti"]]
+ },
+ {
+  en:"What is the main reason you would keep an option that has already been selected for you?",
+  ms:"Apakah sebab utama anda mengekalkan pilihan yang telah ditandakan terlebih dahulu?",
+  opts:[
+   ["It is more convenient and saves time","Lebih mudah dan menjimatkan masa."],
+   ["I did not notice that it was already selected","Saya tidak menyedari bahawa pilihan tersebut telah ditandakan."],
+   ["I trust the platform's recommendation","Saya mempercayai cadangan daripada platform tersebut."],
+   ["I do not have a strong preference","Saya tidak mempunyai pilihan tertentu."],
+   ["Other","Lain-lain."]
+  ]
+ },
+ {
+  en:"Did you notice any options that were already selected before you made your choices in this survey?",
+  ms:"Adakah anda menyedari terdapat pilihan yang telah ditandakan terlebih dahulu sebelum anda membuat pilihan dalam soal selidik ini?",
+  opts:[["Yes","Ya"],["No","Tidak"],["Not sure","Tidak pasti"]]
+ }
 ];
 
 const form=document.getElementById('questionForm'), questionsEl=document.getElementById('questions'), langSelect=document.getElementById('language');
@@ -114,12 +181,25 @@ function renderQuestions(){
  const previous=questions.map((q,i)=>form.querySelector('input[name="q'+i+'"]:checked')?.value ?? null);
  questionsEl.innerHTML='';
  questions.forEach((q,i)=>{
+  if(sections[i]){
+   const secHeader=document.createElement('div');
+   secHeader.className='sec-divider';
+   secHeader.textContent=sections[i][lang];
+   questionsEl.append(secHeader);
+  }
   const block=document.createElement('div');block.className='question';
   const head=document.createElement('div');head.className='qhead';
   const titleWrap=document.createElement('div');
   const num=document.createElement('p');num.className='qnum';num.textContent=(lang==='en'?'QUESTION ':'SOALAN ')+(i+1);
   const title=document.createElement('p');title.className='qtitle';title.textContent=q[lang];
-  titleWrap.append(num,title);head.append(titleWrap);block.append(head);
+  titleWrap.append(num,title);
+  if(q.example){
+   const ex=document.createElement('p');
+   ex.className='qexample';
+   ex.textContent=q.example[lang];
+   titleWrap.append(ex);
+  }
+  head.append(titleWrap);block.append(head);
   const opts=document.createElement('div');opts.className='options';
   q.opts.forEach((o,j)=>{
    const label=document.createElement('label');label.className='option';
@@ -174,21 +254,50 @@ function showResult(answers){
 }
 
 langSelect.addEventListener('change',()=>setLanguage(langSelect.value));
-form.addEventListener('submit',e=>{
+
+form.addEventListener('submit', e => {
  e.preventDefault();
- const answers=[];
- for(let i=0;i<questions.length;i++){
-  const chosen=form.querySelector('input[name="q'+i+'"]:checked');
-  if(!chosen){
-   document.getElementById('formMessage').textContent=lang==='en'?`Please answer all ${questions.length} questions before submitting.`:`Sila jawab kesemua ${questions.length} soalan sebelum menghantar.`;
-   form.querySelectorAll('.question')[i].scrollIntoView({behavior:'smooth',block:'center'});
+ const answers = [];
+ for (let i = 0; i < questions.length; i++) {
+  const chosen = form.querySelector('input[name="q' + i + '"]:checked');
+  if (!chosen) {
+   document.getElementById('formMessage').textContent = lang === 'en'
+    ? `Please answer all ${questions.length} questions before submitting.`
+    : `Sila jawab kesemua ${questions.length} soalan sebelum menghantar.`;
+   form.querySelectorAll('.question')[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
    return;
   }
   answers.push(Number(chosen.value));
  }
- document.getElementById('formMessage').textContent='';
- sessionStorage.setItem('seu332_last_answers',JSON.stringify(answers));
- sessionStorage.setItem('seu332_group_submitted',assignedGroup);
+ document.getElementById('formMessage').textContent = '';
+
+ const payload = {
+  group: assignedGroup,
+  lang: lang,
+  q1: questions[0].opts[answers[0]][0],
+  q2: questions[1].opts[answers[1]][0],
+  q3: questions[2].opts[answers[2]][0],
+  q4: questions[3].opts[answers[3]][0],
+  q5: questions[4].opts[answers[4]][0],
+  q6: questions[5].opts[answers[5]][0],
+  q7: questions[6].opts[answers[6]][0],
+  q8: questions[7].opts[answers[7]][0],
+  q9: questions[8].opts[answers[8]][0],
+  q10: questions[9].opts[answers[9]][0],
+  q11: questions[10].opts[answers[10]][0]
+ };
+
+ if (SCRIPT_URL && SCRIPT_URL.startsWith("https://")) {
+  fetch(SCRIPT_URL, {
+   method: "POST",
+   mode: "no-cors",
+   headers: { "Content-Type": "application/json" },
+   body: JSON.stringify(payload)
+  }).catch(err => console.error("Ralat penghantaran:", err));
+ }
+
+ sessionStorage.setItem('seu332_last_answers', JSON.stringify(answers));
+ sessionStorage.setItem('seu332_group_submitted', assignedGroup);
  showResult(answers);
 });
 
