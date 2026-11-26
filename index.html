@@ -15,7 +15,7 @@ header{background:linear-gradient(120deg,#142b4a,#1c5970);color:white;padding:30
 .sec-divider{background:#f4f8fa;border-left:4px solid var(--blue);padding:11px 15px;border-radius:8px;margin:24px 0 6px;color:var(--navy);font-weight:bold;font-size:15px}.sec-divider:first-child{margin-top:4px}
 .question{padding:21px 0;border-bottom:1px solid #edf1f4}.question:last-child{border-bottom:0}.qhead{display:flex;gap:0;align-items:flex-start}.qtitle{font-weight:700;margin:0 0 10px;color:var(--navy);padding-top:5px}.qnum{font-size:11px;letter-spacing:.7px;color:var(--teal);font-weight:bold;text-transform:uppercase;margin:0 0 2px}.qexample{font-size:13px;color:var(--muted);background:#f8fafc;border:1px dashed #cbd5e1;border-radius:8px;padding:8px 12px;margin:0 0 13px}
 .options{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:9px;padding-left:55px}.option{display:flex;align-items:center;gap:9px;border:1px solid #dbe4ea;border-radius:11px;padding:11px 13px;cursor:pointer;transition:.15s;background:#fff;min-height:45px}.option:hover{border-color:var(--teal);background:#f5fbfa;transform:translateY(-1px)}.option:has(input:checked){border-color:var(--teal);background:#eaf8f5;box-shadow:inset 0 0 0 1px var(--teal)}.option input{accent-color:var(--teal);width:16px;height:16px;flex:0 0 auto}.option span{font-size:14px}
-.actions{display:flex;justify-content:flex-end;gap:10px;margin-top:22px}.actions.between{justify-content:space-between}.primary{background:var(--teal);color:white;border:0;border-radius:11px;padding:13px 23px;font-weight:bold;cursor:pointer;box-shadow:0 5px 12px rgba(34,153,140,.18)}.primary:hover{background:#187f75}.hidden{display:none!important}.small{font-size:13px;color:var(--muted)}#formMessage{color:#b42318;font-weight:bold;margin-top:12px}
+.actions{display:flex;justify-content:flex-end;gap:10px;margin-top:22px}.actions.between{justify-content:space-between}.primary{background:var(--teal);color:white;border:0;border-radius:11px;padding:13px 23px;font-weight:bold;cursor:pointer;box-shadow:0 5px 12px rgba(34,153,140,.18)}.primary:hover{background:#187f75}.primary:disabled{opacity:.65;cursor:not-allowed}.hidden{display:none!important}.small{font-size:13px;color:var(--muted)}#formMessage{color:#b42318;font-weight:bold;margin-top:12px}
 .result-wrap{background:linear-gradient(135deg,#102b49,#1d5a68);border-radius:20px;padding:22px;margin:20px 0;color:white}.result-card{max-width:700px;margin:auto;background:white;color:var(--ink);border-radius:18px;padding:clamp(22px,5vw,36px);text-align:center;box-shadow:0 12px 35px rgba(0,0,0,.15)}.result-kicker{color:var(--teal);font-weight:bold;font-size:12px;letter-spacing:1.4px}.result-card h2{color:var(--navy);font-size:clamp(25px,4vw,34px);margin:8px 0}.result-desc{max-width:560px;margin:0 auto 18px;color:#526276}.result-info{background:#eff7f7;border-radius:13px;padding:16px;text-align:left;margin:16px 0}.tendency-box{border:1px solid var(--line);border-radius:13px;padding:16px;text-align:left;margin:16px 0}.tendency-box h3{margin:0 0 14px;color:var(--navy);font-size:17px}.meter{margin:12px 0}.meter-head{display:flex;justify-content:space-between;gap:10px;font-size:14px;margin-bottom:7px}.meter-track{height:9px;background:#e7edf1;border-radius:20px;overflow:hidden}.meter-fill{height:100%;background:linear-gradient(90deg,#22998c,#56c6b5);border-radius:20px}.concept-list{display:grid;gap:11px;margin-top:12px}.concept-item{background:#f7f9fb;border:1px solid #e6edf2;border-radius:11px;padding:12px}.concept-item strong{display:block;color:var(--navy);margin-bottom:3px}.concept-item p{margin:0;color:#526276;font-size:14px}.result-info h3{margin:0 0 5px;color:var(--navy);font-size:16px}.result-info p{margin:0;color:#526276}.concept-mini{border-top:1px solid var(--line);padding-top:17px;margin-top:18px;text-align:left}.concept-mini h3{margin:0 0 5px;color:var(--navy);font-size:17px}.concept-mini p{margin:0;color:#526276;font-size:14px}.result-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:20px}.secondary{background:#edf3f6;color:var(--navy);border:1px solid #d9e4eb;border-radius:11px;padding:12px 18px;font-weight:bold;cursor:pointer}.secondary:hover{background:#e2ecf1}.result-disclaimer{font-size:12px;color:#738195;margin-top:15px}footer{text-align:center;color:var(--muted);font-size:12px;padding:18px}
 @media(max-width:560px){.card{padding:17px}.options{grid-template-columns:1fr;padding-left:0}.toolbar{justify-content:space-between}.result-wrap{padding:12px}}
 </style>
@@ -260,7 +260,7 @@ function showResult(answers){
  if(influence===0 && reason===0){type=['Convenience-Oriented','Cenderung kepada Kemudahan'];desc=['You tend to choose options that are easy and save time.','Anda cenderung memilih pilihan yang mudah dan menjimatkan masa.'];explain=['You may prefer options that require less effort. If a default option seems convenient, you may be more likely to keep it.','Anda mungkin mengutamakan pilihan yang memerlukan usaha yang sedikit. Jika pilihan default kelihatan mudah, anda mungkin lebih cenderung untuk mengekalkannya.'];connection=['Your answers suggest that convenience may play a role in your choices. In Behavioral Economics, this can be linked to how defaults are presented through Choice Architecture.','Jawapan anda menunjukkan bahawa kemudahan mungkin memainkan peranan dalam pilihan anda. Dalam Behavioral Economics, perkara ini boleh dikaitkan dengan cara pilihan default dipersembahkan melalui Choice Architecture.'];}
  else if(influence===0 && (reason===1||reason===2||reason===3)){type=['Default-Following','Cenderung Mengikuti Pilihan Default'];desc=['You may be more likely to keep an option that has already been selected.','Anda mungkin lebih cenderung mengekalkan pilihan yang telah ditetapkan.'];explain=['This may happen because you did not notice the setting, trusted the platform recommendation, or had no strong preference to change it.','Hal ini mungkin berlaku kerana anda tidak menyedari tetapan tersebut, mempercayai cadangan platform atau tidak mempunyai pilihan yang kuat untuk mengubahnya.'];connection=['This pattern is related to the Default Effect and Status Quo Bias, where people may stick with the option already presented rather than actively changing it.','Corak ini berkaitan dengan Default Effect dan Status Quo Bias, iaitu keadaan apabila seseorang cenderung mengekalkan pilihan yang telah tersedia berbanding mengubahnya.'];}
  else if(influence===1){type=['Independent Chooser','Cenderung Membuat Pilihan Sendiri'];desc=['You tend to make choices based on your own preference rather than simply following a pre-selected option.','Anda cenderung membuat pilihan berdasarkan kehendak sendiri dan bukannya mengikut pilihan yang telah ditetapkan.'];explain=['You may pay attention to the available options and decide whether the default suits your needs.','Anda mungkin memberi perhatian kepada pilihan yang tersedia dan menentukan sama ada pilihan default sesuai dengan keperluan anda.'];connection=['Your answers suggest that you may be less influenced by defaults. However, Choice Architecture can still affect how options are noticed and considered.','Jawapan anda menunjukkan bahawa anda mungkin kurang dipengaruhi oleh pilihan default. Namun, Choice Architecture masih boleh mempengaruhi cara pilihan diberi perhatian dan dipertimbangkan.'];}
- else {type=['Undecided / Mixed','Tidak Pasti / Bercampur'];desc=['Your answers show a mixed pattern, rather than one clear decision-making tendency.','Jawapan anda menunjukkan corak yang bercampur dan bukannya satu kecenderungan membuat keputusan yang jelas.'];explain=['Your choices may depend on the situation, the type of option and how much attention you give to the setting.','Pilihan anda mungkin bergantung pada situasi, jenis pilihan dan sejauh mana anda memberi perhatian kepada tetapan yang disediakan.'];connection=['Behavioral Economics recognises that the way choices are presented can influence decisions differently across situations and individuals.','Behavioral Economics mengiktiraf bahawa cara pilihan dipersembahkan boleh mempengaruhi keputusan secara berbeza mengikut situasi dan individu.'];}
+ else {type=['Undecided / Mixed','Tidak Pasti / Bercampur'];desc=['Your answers show a mixed pattern, rather than one clear decision-making tendency.','Anda menunjukkan corak yang bercampur dan bukannya satu kecenderungan membuat keputusan yang jelas.'];explain=['Your choices may depend on the situation, the type of option and how much attention you give to the setting.','Pilihan anda mungkin bergantung pada situasi, jenis pilihan dan sejauh mana anda memberi perhatian kepada tetapan yang disediakan.'];connection=['Behavioral Economics recognises that the way choices are presented can influence decisions differently across situations and individuals.','Behavioral Economics mengiktiraf bahawa cara pilihan dipersembahkan boleh mempengaruhi keputusan secara berbeza mengikut situasi dan individu.'];}
  
  const convenienceScore = reason===0 ? 85 : reason===4 ? 45 : 60;
  const baseAwareness = noticed===0 ? 90 : noticed===1 ? 75 : noticed===2 ? 55 : noticed===3 ? 35 : 20;
@@ -281,7 +281,7 @@ function showResult(answers){
 
 langSelect.addEventListener('change',()=>setLanguage(langSelect.value));
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', async e => {
  e.preventDefault();
  const answers = [];
  for (let i = 0; i < questions.length; i++) {
@@ -313,41 +313,32 @@ form.addEventListener('submit', e => {
   q11: questions[10].opts[answers[10]][0]
  };
 
- 
-const submitButton = document.getElementById('submitBtn');
-submitButton.disabled = true;
-submitButton.textContent = lang === 'en' ? 'Submitting...' : 'Sedang menghantar...';
+ const submitButton = document.getElementById('submitBtn');
+ submitButton.disabled = true;
+ submitButton.textContent = lang === 'en' ? 'Submitting...' : 'Sedang menghantar...';
 
-try {
+ try {
   await fetch(SCRIPT_URL, {
-    method: "POST",
-    mode: "no-cors",
-    headers: {
-      "Content-Type": "text/plain;charset=utf-8"
-    },
-    body: JSON.stringify(payload)
+   method: "POST",
+   mode: "no-cors",
+   headers: {
+    "Content-Type": "text/plain;charset=utf-8"
+   },
+   body: JSON.stringify(payload)
   });
 
   sessionStorage.setItem('seu332_last_answers', JSON.stringify(answers));
   sessionStorage.setItem('seu332_group_submitted', assignedGroup);
   showResult(answers);
-
-} catch (err) {
+ } catch (err) {
   console.error("Ralat penghantaran:", err);
-
   document.getElementById('formMessage').textContent = lang === 'en'
-    ? 'Your responses could not be sent. Please check your internet connection and try again.'
-    : 'Jawapan anda tidak dapat dihantar. Sila semak sambungan internet dan cuba lagi.';
-
-} finally {
+   ? 'Your responses could not be sent. Please check your internet connection and try again.'
+   : 'Jawapan anda tidak dapat dihantar. Sila semak sambungan internet dan cuba lagi.';
+ } finally {
   submitButton.disabled = false;
   submitButton.textContent = lang === 'en' ? 'Submit answers' : 'Hantar jawapan';
-}
-
-
- sessionStorage.setItem('seu332_last_answers', JSON.stringify(answers));
- sessionStorage.setItem('seu332_group_submitted', assignedGroup);
- showResult(answers);
+ }
 });
 
 document.getElementById('restartBtn').addEventListener('click',()=>{
